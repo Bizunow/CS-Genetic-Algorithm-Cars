@@ -1,0 +1,3 @@
+C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\Content\obj\x86\Debug\DebugView Content.contentprojResolveAssemblyReference.cache
+F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\Content\obj\x86\Debug\DebugView Content.contentprojResolveAssemblyReference.cache
+C:\_my\dev\c#\Farseer Physics DebugView 3.5\Content\obj\x86\Debug\DebugView Content.contentprojResolveAssemblyReference.cache

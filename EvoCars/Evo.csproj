@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{79A85E3D-BCE9-4490-9984-2F189AB99027}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Evo</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EvoCars\EvoCarsContent\circleSprite.png" />
+    <Content Include="EvoCars\EvoCarsContent\groundSprite.png" />
+    <Content Include="EvoCars\EvoCarsContent\obj\x86\Debug\EvoCarsContent.contentproj.FileListAbsolute.txt" />
+    <Content Include="EvoCars\EvoCars\bin\x86\Debug\DebugView XNA.dll" />
+    <Content Include="EvoCars\EvoCars\bin\x86\Debug\DebugView XNA.pdb" />
+    <Content Include="EvoCars\EvoCars\bin\x86\Debug\DebugView XNA.xml" />
+    <Content Include="EvoCars\EvoCars\bin\x86\Debug\EvoCars.exe" />
+    <Content Include="EvoCars\EvoCars\bin\x86\Debug\EvoCars.pdb" />
+    <Content Include="EvoCars\EvoCars\bin\x86\Debug\FarseerPhysics XNA.dll" />
+    <Content Include="EvoCars\EvoCars\bin\x86\Debug\FarseerPhysics XNA.pdb" />
+    <Content Include="EvoCars\EvoCars\bin\x86\Debug\FarseerPhysics XNA.xml" />
+    <Content Include="EvoCars\EvoCars\EvoCars.csproj" />
+    <Content Include="EvoCars\EvoCars\EvoCars.csproj.user" />
+    <Content Include="EvoCars\EvoCars\Game.ico" />
+    <Content Include="EvoCars\EvoCars\GameThumbnail.png" />
+    <Content Include="EvoCars\EvoCars\obj\x86\Debug\cachefile-{4C759469-6F6E-4FE0-8C00-3BD4A3D06281}-targetpath.txt" />
+    <Content Include="EvoCars\EvoCars\obj\x86\Debug\ContentPipeline-{4C759469-6F6E-4FE0-8C00-3BD4A3D06281}.xml" />
+    <Content Include="EvoCars\EvoCars\obj\x86\Debug\EvoCars.csproj.FileListAbsolute.txt" />
+    <Content Include="EvoCars\EvoCars\obj\x86\Debug\EvoCars.exe" />
+    <Content Include="EvoCars\EvoCars\obj\x86\Debug\EvoCars.pdb" />
+    <Content Include="EvoCars\EvoCars\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt" />
+    <Content Include="UpgradeLog.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EvoCars\EvoCarsContent\EvoCarsContent.contentproj" />
+    <None Include="EvoCars\EvoCarsContent\obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="EvoCars\EvoCarsContent\obj\x86\Debug\EvoCarsContent.contentprojResolveAssemblyReference.cache" />
+    <None Include="EvoCars\EvoCars\bin\x86\Debug\Content\circleSprite.xnb" />
+    <None Include="EvoCars\EvoCars\bin\x86\Debug\Content\Font.xnb" />
+    <None Include="EvoCars\EvoCars\bin\x86\Debug\Content\groundSprite.xnb" />
+    <None Include="EvoCars\EvoCars\EvoCars.csproj.Debug.cachefile" />
+    <None Include="EvoCars\EvoCars\obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="EvoCars\EvoCars\obj\x86\Debug\EvoCars.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EvoCars\EvoCars\Game1.cs" />
+    <Compile Include="EvoCars\EvoCars\Program.cs" />
+    <Compile Include="EvoCars\EvoCars\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EvoCars\EvoCarsContent\bin\x86\Debug\" />
+    <Folder Include="EvoCars\EvoCarsContent\obj\x86\Debug\TempPE\" />
+    <Folder Include="EvoCars\EvoCars\bin\x86\Release\" />
+    <Folder Include="EvoCars\EvoCars\obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Farseer Physics DebugView 3.5\DebugView XNA.csproj">
+      <Project>{fc7845fa-13fe-4ff8-822a-a577f3f59b00}</Project>
+      <Name>DebugView XNA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Farseer Physics Engine 3.5\Farseer Physics XNA.csproj">
+      <Project>{0a850700-1abb-4288-a391-6726b90ebeb9}</Project>
+      <Name>Farseer Physics XNA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

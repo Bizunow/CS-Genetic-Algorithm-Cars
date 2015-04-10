@@ -1,0 +1,1 @@
+C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView MonoGame.csprojResolveAssemblyReference.cache

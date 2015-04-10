@@ -1,0 +1,4 @@
+C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics Engine 3.5\bin\Release\ClassLibrary.dll
+C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics Engine 3.5\bin\Release\ClassLibrary.pdb
+C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics Engine 3.5\obj\Release\ClassLibrary.dll
+C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics Engine 3.5\obj\Release\ClassLibrary.pdb
