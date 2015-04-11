@@ -1,42 +1,10 @@
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\Content\Font.xnb
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.xml
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.dll
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.pdb
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.dll
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.pdb
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.csprojResolveAssemblyReference.cache
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.dll
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.pdb
-C:\Users\Линукс\Desktop\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.xml
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\Content\Font.xnb
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.xml
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.dll
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.pdb
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.dll
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.pdb
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.csprojResolveAssemblyReference.cache
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.dll
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.pdb
-F:\proj\Farseer Physics Engine 3.5 Testbed\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.xml
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\bin\x86\Debug\Content\Font.xnb
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.xml
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.dll
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.pdb
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.dll
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.pdb
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.csprojResolveAssemblyReference.cache
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.dll
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.pdb
-C:\_my\dev\c#\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.xml
 C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\bin\x86\Debug\Content\Font.xnb
 C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.xml
 C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.dll
 C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\bin\x86\Debug\DebugView XNA.pdb
 C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.dll
 C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.pdb
+C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\bin\x86\Debug\FarseerPhysics XNA.xml
 C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.csprojResolveAssemblyReference.cache
 C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\obj\x86\Debug\DebugView XNA.dll
