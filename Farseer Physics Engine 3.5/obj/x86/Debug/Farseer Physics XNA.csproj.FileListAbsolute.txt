@@ -1,7 +1,0 @@
-C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics Engine 3.5\bin\x86\Debug\FarseerPhysics XNA.xml
-C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics Engine 3.5\bin\x86\Debug\FarseerPhysics XNA.dll
-C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics Engine 3.5\bin\x86\Debug\FarseerPhysics XNA.pdb
-C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics Engine 3.5\obj\x86\Debug\Farseer Physics XNA.csprojResolveAssemblyReference.cache
-C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics Engine 3.5\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics Engine 3.5\obj\x86\Debug\FarseerPhysics XNA.dll
-C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics Engine 3.5\obj\x86\Debug\FarseerPhysics XNA.pdb
