@@ -7,7 +7,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\_my\dev\c#\Farseer Physics DebugView 3.5\bin\x86\Debug\Content\Font.xnb</Output>
+      <Output>C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\bin\x86\Debug\Content\Font.xnb</Output>
       <Time>2015-02-13T20:28:21.1279296+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -17,10 +17,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\_my\dev\c#\Farseer Physics DebugView 3.5\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\_my\dev\c#\Farseer Physics DebugView 3.5\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\_my\dev\c#\Farseer Physics DebugView 3.5\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\_my\dev\c#\Farseer Physics DebugView 3.5\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\_my\dev\c#\repo\C--Genetic-Algorithm-Cars\Farseer Physics DebugView 3.5\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

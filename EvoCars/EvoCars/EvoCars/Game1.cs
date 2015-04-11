@@ -33,7 +33,7 @@ public class Utils
     }
 }
 
-namespace GenomUtils
+namespace Genom
 {
     public class genChassis
     {
@@ -61,7 +61,7 @@ namespace GenomUtils
         public void mutate()
         {
             int index = random.Next(0, chassisVertices);
-            vertices[index] += ((float)random.Next(-1, 2)) / 5;
+            vertices[index] += ((float)random.Next(-1, 2)) / 20; //5
             vertices[index] = Math.Max(Math.Min(vertices[index], chassisMaxLength), chassisMinLength);
         }
 
@@ -116,11 +116,11 @@ namespace GenomUtils
             if (vertex < 0) vertex = 7;
             if (vertex > 7) vertex = 0;
 
-            radius = radius + ((float)(random.NextDouble() - 0.5d)) / 10f;
+            radius = radius + ((float)(random.NextDouble() - 0.5d)) / 20f;
             if (radius > wheel_radius_max) radius = wheel_radius_max;
             if (radius < wheel_radius_min) radius = wheel_radius_min;
 
-            density = density + ((float)(random.NextDouble() - 0.5d)) / 10f;
+            density = density + ((float)(random.NextDouble() - 0.5d)) / 20f;
             if (density > wheel_density_max) density = wheel_density_max;
             if (density < wheel_density_min) density = wheel_density_min;
         }
@@ -272,9 +272,9 @@ namespace PhysicalWorld
         private float max_x;
         private float timer;
 
-        public GenomUtils.Genom genom;
+        public Genom.Genom genom;
 
-        public Car(World world, GenomUtils.Genom genom)
+        public Car(World world, Genom.Genom genom)
         {
             chassis = new Chassis(world, genom.chassis.vertices, genom.chassis.density);
             chassis.body.Position = new Vector2(2.5f, -1.0f);
@@ -366,19 +366,19 @@ namespace PhysicalWorld
     {
         private Body ground;
 
-        private const int groundLength = 50;
-        private const float oneEdgeLength = 3f;
+        private const int groundLength = 200;
+        private const float oneEdgeLength = 0.5f;
         private Vector2 startPos = new Vector2(0, 5);
 
         public Ground(World world)
         {
-            ground = BodyFactory.CreateEdge(world, startPos, startPos += new Vector2(oneEdgeLength * 2, 0));
+            ground = BodyFactory.CreateEdge(world, startPos, startPos += new Vector2(oneEdgeLength, 0));
 
             Random random = new Random();
 
             for (int i = 1; i <= groundLength; i++)
             {
-                Vector2 randomVector = startPos + new Vector2(oneEdgeLength, random.Next(-(i / 10), (i / 15)));
+                Vector2 randomVector = startPos + new Vector2(oneEdgeLength, (float)(random.NextDouble() - 0.5d) * ((float)i / (groundLength/2)));
                 FixtureFactory.AttachEdge(startPos, randomVector, ground);
                 startPos = randomVector;
             }
@@ -398,13 +398,13 @@ public class Controller
     private Random random;
 
     // Размер популяции
-    const int populationSize = 10;
+    const int populationSize = 15;
 
     // Геном популяции
     int generation = 0;
-    GenomUtils.Genom bestGenom;
+    Genom.Genom bestGenom;
     List<float> allGenomsScore;
-    List<GenomUtils.Genom> genoms;
+    List<Genom.Genom> genoms;
     List<float> genomScore;
     int currentGenom = 0;
     float absoluteRecord = 0;
@@ -423,14 +423,14 @@ public class Controller
 
         allGenomsScore = new List<float>();
         allAvgScores = new List<float>();
-        genoms = new List<GenomUtils.Genom>();
+        genoms = new List<Genom.Genom>();
         genomScore = new List<float>();
 
         currentCar = null;
 
         for (int i = 0; i < populationSize; i++)
         {
-            GenomUtils.Genom newGenom = new GenomUtils.Genom(random);
+            Genom.Genom newGenom = new Genom.Genom(random);
             newGenom.mutate();
             genoms.Add(newGenom);
             genomScore.Add(0);
@@ -497,7 +497,7 @@ public class Controller
                 genoms[0] = bestGenom.Clone();
                 for (int i = 1; i < populationSize; i++)
                 {
-                    GenomUtils.Genom mutatedGenom = bestGenom.Clone();
+                    Genom.Genom mutatedGenom = bestGenom.Clone();
                     mutatedGenom.mutate();
                     genoms[i] = mutatedGenom;
                 }
