@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 
 using FarseerPhysics;
@@ -16,7 +16,7 @@ using Microsoft.Xna.Framework.Input;
 //using Math;
 
 /// <summary>
-/// Класс упрощающий разработку приложения
+/// РљР»Р°СЃСЃ СѓРїСЂРѕС‰Р°СЋС‰РёР№ СЂР°Р·СЂР°Р±РѕС‚РєСѓ РїСЂРёР»РѕР¶РµРЅРёСЏ
 /// </summary>
 public class Utils
 {
@@ -36,7 +36,7 @@ public class Utils
 namespace Genom
 {
     /* TODO:
-     *  1) Вынести силу мутации отдельную переменную и изменять ген в процентном отношении
+     *  1) Р’С‹РЅРµСЃС‚Рё СЃРёР»Сѓ РјСѓС‚Р°С†РёРё РѕС‚РґРµР»СЊРЅСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ Рё РёР·РјРµРЅСЏС‚СЊ РіРµРЅ РІ РїСЂРѕС†РµРЅС‚РЅРѕРј РѕС‚РЅРѕС€РµРЅРёРё
      */
     public class genChassis
     {
@@ -88,7 +88,7 @@ namespace Genom
     }
 
     /* TODO:
-     *  1) Вынести силу мутации отдельную переменную и изменять ген в процентном отношении
+     *  1) Р’С‹РЅРµСЃС‚Рё СЃРёР»Сѓ РјСѓС‚Р°С†РёРё РѕС‚РґРµР»СЊРЅСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ Рё РёР·РјРµРЅСЏС‚СЊ РіРµРЅ РІ РїСЂРѕС†РµРЅС‚РЅРѕРј РѕС‚РЅРѕС€РµРЅРёРё
      */
     public class genWheel
     {
@@ -153,7 +153,7 @@ namespace Genom
         public genWheel wheel_2;
 
         private Random random;
-        private const float crossoverMutationChance = 10f;   // Шанс мутации (из 100%)
+        private const float crossoverMutationChance = 10f;   // РЁР°РЅСЃ РјСѓС‚Р°С†РёРё (РёР· 100%)
 
         public Genom(Random random)
         {
@@ -180,7 +180,7 @@ namespace Genom
         public void crossover(Genom a, Genom b)
         {
             /*
-             * Разобраться с системой классов генома, реализовать кросовер
+             * Р Р°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ СЃРёСЃС‚РµРјРѕР№ РєР»Р°СЃСЃРѕРІ РіРµРЅРѕРјР°, СЂРµР°Р»РёР·РѕРІР°С‚СЊ РєСЂРѕСЃРѕРІРµСЂ
              */
         }
 
@@ -206,7 +206,7 @@ namespace Genom
 namespace PhysicalWorld
 {
     /// <summary>
-    /// Класс колесо машины
+    /// РљР»Р°СЃСЃ РєРѕР»РµСЃРѕ РјР°С€РёРЅС‹
     /// </summary>
     public class Wheel
     {
@@ -236,7 +236,7 @@ namespace PhysicalWorld
     }
 
     /// <summary>
-    /// Класс кузов машины
+    /// РљР»Р°СЃСЃ РєСѓР·РѕРІ РјР°С€РёРЅС‹
     /// </summary>
     public class Chassis
     {
@@ -271,7 +271,7 @@ namespace PhysicalWorld
     }
 
     /// <summary>
-    /// Класс описывающий машину (организм)
+    /// РљР»Р°СЃСЃ РѕРїРёСЃС‹РІР°СЋС‰РёР№ РјР°С€РёРЅСѓ (РѕСЂРіР°РЅРёР·Рј)
     /// </summary>
     public class Car
     {
@@ -370,7 +370,7 @@ namespace PhysicalWorld
     }
 
     /// <summary>
-    /// Класс описывающий поверхность
+    /// РљР»Р°СЃСЃ РѕРїРёСЃС‹РІР°СЋС‰РёР№ РїРѕРІРµСЂС…РЅРѕСЃС‚СЊ
     /// </summary>
     public class Ground
     {
@@ -397,7 +397,7 @@ namespace PhysicalWorld
         }
 
         /*
-         * Нужен ли этот метод? Везде просто public body.
+         * РќСѓР¶РµРЅ Р»Рё СЌС‚РѕС‚ РјРµС‚РѕРґ? Р’РµР·РґРµ РїСЂРѕСЃС‚Рѕ public body.
          */
         public Body getBody()
         {
@@ -410,10 +410,10 @@ public class Controller
 {
     private Random random;
 
-    // Размер популяции
+    // Р Р°Р·РјРµСЂ РїРѕРїСѓР»СЏС†РёРё
     const int populationSize = 15;
 
-    // Геном популяции
+    // Р“РµРЅРѕРј РїРѕРїСѓР»СЏС†РёРё
     int generation = 0;
     Genom.Genom bestGenom;
     List<float> allGenomsScore;
@@ -423,14 +423,14 @@ public class Controller
     float absoluteRecord = 0;
     List<float> allAvgScores;
 
-    // Ссылка на машину
+    // РЎСЃС‹Р»РєР° РЅР° РјР°С€РёРЅСѓ
     public PhysicalWorld.Car currentCar;
 
     World world;
 
     /* TODO:
-     *  1) написатьь бы класс для хранения инфы о поколении (популяции), а то так фигово выглядит.
-     *  2) update ужас, надо переписать
+     *  1) РЅР°РїРёСЃР°С‚СЊСЊ Р±С‹ РєР»Р°СЃСЃ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РёРЅС„С‹ Рѕ РїРѕРєРѕР»РµРЅРёРё (РїРѕРїСѓР»СЏС†РёРё), Р° С‚Рѕ С‚Р°Рє С„РёРіРѕРІРѕ РІС‹РіР»СЏРґРёС‚.
+     *  2) update СѓР¶Р°СЃ, РЅР°РґРѕ РїРµСЂРµРїРёСЃР°С‚СЊ
      */
     public Controller(World world)
     {
