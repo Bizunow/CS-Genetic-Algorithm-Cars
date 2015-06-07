@@ -13,6 +13,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+using System.IO;
+
 //using Math;
 
 /// <summary>
@@ -38,13 +40,14 @@ namespace Genom
     /* TODO:
      *  1) Вынести силу мутации отдельную переменную и изменять ген в процентном отношении
      */
+    // Класс, описывающий кузов машины
     public class genChassis
     {
-        public float density = 0.9f;
-        public List<float> vertices;
-        public const int chassisVertices = 8;
-        public const float chassisMaxLength = 2.0f;
-        public const float chassisMinLength = 0.4f;
+        public float density = 0.9f;        // Плотность
+        public List<float> vertices;        // Вершины
+        public const int chassisVertices = 8; // Кол-во вершин
+        public const float chassisMaxLength = 5.0f; // Ограничение для максимальной длины вершины
+        public const float chassisMinLength = 0.4f; // Ограничение для минимальной длины вершины
 
         private Random random;
 
@@ -63,7 +66,7 @@ namespace Genom
         public void mutate()
         {
             int index = random.Next(0, chassisVertices);
-            vertices[index] += ((float)random.Next(-1, 2)) / 20; //5
+            vertices[index] += ((float)random.Next(-1, 2)) / 20;
             vertices[index] = Math.Max(Math.Min(vertices[index], chassisMaxLength), chassisMinLength);
         }
 
@@ -92,13 +95,13 @@ namespace Genom
      */
     public class genWheel
     {
-        public int vertex;
-        public float radius;
-        public float density;
-        public const float wheel_radius_max = 0.5f;
-        public const float wheel_radius_min = 0.2f;
-        public const float wheel_density_max = 1.0f;
-        public const float wheel_density_min = 0.2f;
+        public int vertex;  // вершина, к которой привязано колесо
+        public float radius;// Радиус
+        public float density;// Плотность
+        public const float wheel_radius_max = 0.5f; //  \
+        public const float wheel_radius_min = 0.2f; //   \ Ограничения размера и плотности
+        public const float wheel_density_max = 1.0f;//   /
+        public const float wheel_density_min = 0.2f;//  /
         public const int chassisVertices = 8;
 
         private Random random;
@@ -148,12 +151,12 @@ namespace Genom
 
     public class Genom
     {
-        public genChassis chassis;
-        public genWheel wheel_1;
-        public genWheel wheel_2;
+        // По сути, весь геном описывает этими тремя экхемплярами классов
+        public genChassis chassis; // Кузов
+        public genWheel wheel_1;   // Первое колесо
+        public genWheel wheel_2;   // Второе колесо
 
         private Random random;
-        private const float crossoverMutationChance = 10f;   // Шанс мутации (из 100%)
 
         public Genom(Random random)
         {
@@ -175,13 +178,6 @@ namespace Genom
                 wheel_1.mutate();
                 wheel_2.mutate();
             }
-        }
-
-        public void crossover(Genom a, Genom b)
-        {
-            /*
-             * Разобраться с системой классов генома, реализовать кросовер
-             */
         }
 
         public Genom Clone()
@@ -430,7 +426,6 @@ public class Controller
 
     /* TODO:
      *  1) написатьь бы класс для хранения инфы о поколении (популяции), а то так фигово выглядит.
-     *  2) update ужас, надо переписать
      */
     public Controller(World world)
     {
@@ -456,14 +451,16 @@ public class Controller
 
     ~Controller()
     {
-        System.IO.StreamWriter file = new System.IO.StreamWriter("c:\\_my\\genom max scores.txt");
+        string path = Directory.GetCurrentDirectory();
+
+        System.IO.StreamWriter file = new System.IO.StreamWriter(path + "\\max scores.txt");
 
         for (int i = 0; i < allGenomsScore.Count; i++)
             file.WriteLine(allGenomsScore[i].ToString());
 
         file.Close();
 
-        file = new System.IO.StreamWriter("c:\\_my\\genom avg scores.txt");
+        file = new System.IO.StreamWriter(path + "\\avg scores.txt");
 
         for (int i = 0; i < allAvgScores.Count; i++)
             file.WriteLine(allAvgScores[i].ToString());
